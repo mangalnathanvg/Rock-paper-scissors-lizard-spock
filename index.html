@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
+<!--    Replace font awesome kit with your own kit if needed -->
     <script src="https://kit.fontawesome.com/7abf311edc.js" crossorigin="anonymous"></script>
     <title>Rock Paper Scissor Lizard Spock</title>
 </head>
@@ -14,15 +15,41 @@
 
     <h1>Rock Paper Scissor Lizard Spock</h1>
     <div id="Display-area">
-        <div class="result">Hello</div>
+        <div class="result">Choose an action to play</div>
+        <div class="verdict"></div>
     </div>
+
     <section class="action-btns">
-        <button type="button" class="action_button" value="rock"><i class="fa-regular fa-hand-back-fist"></i></button>
-        <button type="button" class="action_button" value="paper"><i class="fa-regular fa-hand"></i></button>
-        <button type="button" class="action_button" value="scissor"><i class="fa-regular fa-hand-scissors"></i></button>
-        <button type="button" class="action_button" value="lizard"><i class="fa-regular fa-hand-lizard"></i></button>
+        <button type="button" class="action_button" value="Rock"><i class="fa-regular fa-hand-back-fist"></i></button>
+        <button type="button" class="action_button" value="Paper"><i class="fa-regular fa-hand"></i></button>
+        <button type="button" class="action_button" value="Scissors"><i class="fa-regular fa-hand-scissors"></i></button>
+        <button type="button" class="action_button" value="Lizard"><i class="fa-regular fa-hand-lizard"></i></button>
         <button type="button" class="action_button" value="Spock"><i class="fa-regular fa-hand-spock"></i></button>
     </section>
 
+    <button id="myBtn">How to Play</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="assets/rpsls.png" alt="Rock paper scissors lizard spock"/>
+            <p id="about">
+                Rock smashes Scissor.
+                Rock smashes Lizard. <br />
+                Paper covers Rock.
+                Paper disproves Spock. <br />
+                Scissor cuts Paper.
+                Scissor decapitates Lizard. <br />
+                Lizard eats Paper.
+                Lizard poisons Spock. <br />
+                Spock smashes Scissors.
+                Spock vaporizes Rock. <br />
+            </p>
+        </div>
+
+    </div>
 </body>
 </html>
